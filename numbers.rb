@@ -1,6 +1,6 @@
-numbers = [4, 6, 5, 5, 10]
+numbers = [4, 6, 5, 5, 10, 14]
 total = 0
-  numbers.each do |number|
-    total = numbers.reduce(:+)
-  end
-puts "The sum of all of the numbers is #{total}"
+numbers.reduce(0) do |x, y|
+    total = x + y
+end
+puts "The sum of all the numbers is #{total}"
